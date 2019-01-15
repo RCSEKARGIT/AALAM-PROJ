@@ -1,28 +1,4 @@
 
-
-## Road to V3!
-We're on our way towards V3, which will bring a few updates to MERN! We are tracking with the following milestones:
-
-- V2.4.0 -> Webpack 3 and many fixes *Completed* : [list of changes](Changes.md)
-- V2.5.0 -> React V16.x upgrade and propTypes fix
-- V2.6.0 -> React Router V4
-- V2.7.0 -> Webpack upgrade to V4
-- V2.8.0 -> database/mongo/mongoose updates/fixes
-- V2.9.0 -> Express/Server dependencies/code upgrade
-- V3.0.0 -> CLI/devtools optimization (docker, etc.)
-
-## Quickstart
-
-```sh
-  npm install -g mern-cli
-  mern init your_new_app
-  cd your_new_app
-  npm install
-  npm start
-```
-
-**Note : Please make sure your MongoDB is running.** For MongoDB installation guide see [this](https://docs.mongodb.org/v3.0/installation/). Also `npm6` is required to install dependencies properly.
-
 ## Available Commands
 
 1. `npm run start` - starts the development server with hot reloading enabled
