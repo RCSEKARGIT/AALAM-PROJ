@@ -91,7 +91,73 @@ const renderFullPage = (html, initialState) => {
 
         ${isProdMode ? `<link rel='stylesheet' href='${assetsManifest['/app.css']}' />` : ''}
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'/>
-      </head>
+      
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/css/jpanelmenu.css" />
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/_jquery/css/custom-theme/jquery-ui-1.9.2.custom.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/_jquery/css/jquery.ui.potato.menu.css" />
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/_jquery/css/fullcalendar.css" />
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/_jquery/css/fullcalendar.print.css" media="print" />
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/jquery.jpanelmenu.min.js"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/html5shiv.js?ccccombo_breaker="></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/respond.min.js?ccccombo_breaker="></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/modernizr.custom.36944.js?ccccombo_breaker="></script>
+        <![endif]-->
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/_jquery/js/_custom.js"></script>
+        <link href="https://www.viethconsulting.com/_jquery/nivo/nivo-slider.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- Jake jquery bits -->
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/equal_height.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/formatPhoneLink.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/itemSlider.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/linkConverter.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/navPadder.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/user_image_hw_fix.js"></script>
+        <script type="text/javascript" src="http://host7.viethwebhosting.com/~bbd1/includes/functions/vcenter.js"></script>
+        <!-- Google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+        <!-- Our style sheets -->
+        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/css/style.css?combobreaker=1520023496"  />
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <style type="text/css">
+           body{
+           background-repeat: repeat;
+           }
+           .navbar-toggle{
+           display: none;
+           }
+           .ie8mademedoit{
+           margin-top: 20px;
+           }
+        </style>
+        <link rel="shortcut icon" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon16px.png">
+        <link rel="icon" sizes="16x16" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon16px.png">
+        <link rel="icon" sizes="24x24" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon24px.png">
+        <link rel="icon" sizes="32x32" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon32px.png">
+        <link rel="icon" sizes="57x57" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon57px.png">
+        <link rel="icon" sizes="72x72" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon72px.png">
+        <link rel="icon" sizes="96x96" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon96px.png">
+        <link rel="icon" sizes="114x114" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon114px.png">
+        <link rel="icon" sizes="128x128" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon128px.png">
+        <link rel="icon" sizes="195x195" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon195px.png">
+        <link rel="apple-touch-icon" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon57px.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon72px.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon114px.png">
+     </head>
+      
+      
+        </head>
       <body>
         <div id="root">${process.env.NODE_ENV === 'production' ? html : `<div>${html}</div>`}</div>
         <script>
