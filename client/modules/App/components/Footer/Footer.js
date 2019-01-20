@@ -7,10 +7,10 @@ export function Footer() {
     <div id="footer-wrap" className="container">
        <div id="credits" className="col-md-6 col-sm-6 col-xs-12">
           <p>
-             &copy; 2019 BBD. Website powered by <a href="https://www.memberleap.com" target="_blank">MemberLeap.</a><br />
+             &copy; 2019 Aalam Association Website powered by RCSEKAR.<br />
           </p>
-          <p>Sample Address Rd, Sampleton ZD 23400<br />
-             <a href="mailto:sample@info.org">sample@info.org</a>
+          <p>Saligramam, Chennai<br />
+              mailto: rcsekar1970@gmail.com ; allamviluthugal.org
           </p>
        </div>
        <div id="footer-social" className="col-md-6 col-sm-6 col-xs-12">

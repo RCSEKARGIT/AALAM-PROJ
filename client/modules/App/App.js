@@ -20,7 +20,6 @@ export class App extends Component {
     return (
       <div>
         <Header />
-
           <div className={styles.container}>
             {this.props.children}
           </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
 
+const logo = require('./aalam-logo3.jpg');
+
 // Import Style
 import styles from './Header.css';
 
@@ -10,16 +12,16 @@ export function Header() {
     <div id="header-container">
         <div id="header-wrap" className="container">
             <div className="row">
-               <div id="logo-wrap" className="col-md-3 col-sm-6 col-xs-6">
-                  <a href="http://host7.viethwebhosting.com/~bbd1/">
-                  <img src="http://host7.viethwebhosting.com/~bbd1/images/main-logo.png?brk=1479496824" alt="" className="img-responsive" />
-                  </a>
+               <Link to='/'>
+               <div id="logo-wrap" className="col-md-2 col-sm-4 col-xs-6">
+                  <img src={logo} alt="" className="img-responsive" />
                </div>
+               </Link>
                <div className="col-md-9 col-sm-6 hidden-xs">
                   <div id="search-area" className="col-md-5 col-sm-12 hidden-xs">
-                     <form id="searchbox" action="http://memberleap.com/members/search/query.php?org_id=BBD1">
+                     <form id="searchbox" action="https://google.co.in">
                         <input id="q" name="keyword" type="search" className="search-input " placeholder="Search..." />
-                        <input type="hidden" name="org_id" value="BBD1" />
+                        <input type="hidden" name="org_id" value="AGPC" />
                         <input value="" name="sa" className="search-button" type="submit" />
                      </form>
                   </div>
@@ -27,12 +29,12 @@ export function Header() {
                <div id="main-menu" className="col-md-9">
                   <div id="nav_menu" className="NP collapse navbar-collapse navbar-ex1-collapse">
                      <ul className="nav navbar-nav men-level-">
-                        <li><a href="#" target="_top">About</a></li>
+                        <li><Link to="/about" target="_top">About Us</Link></li>
                         <li><a href="#" target="_top">Membership</a></li>
-                        <li><a href="#" target="_top">News</a></li>
+                        <li><a href="#" target="_top">Mission/Vision</a></li>
                         <li><a href="#" target="_top">Events</a></li>
-                        <li><a href="#" target="_top">Committees</a></li>
-                        <li><a href="#" target="_top">Resources</a></li>
+                        <li><a href="#" target="_top">Chapter Programs</a></li>
+                        <li><a href="#" target="_top">Contact Us</a></li>
                         <li className="mLogin">
                            <a href="#" data-toggle="modal" data-target="#myModal">Member Login</a>
                         </li>

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import ContentFirst from './components/ContentFirst'
-
+import { MsgBox } from './components/MsgBox/MsgBox'
 class Home extends Component {
 
   render() {
     return (
       <div>
-        
-        <ContentFirst />
+        <MsgBox />
       </div>
     );
   }
