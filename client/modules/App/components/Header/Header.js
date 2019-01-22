@@ -31,10 +31,10 @@ export function Header() {
                      <ul className="nav navbar-nav men-level-">
                         <li><Link to="/about" target="_top">About Us</Link></li>
                         <li><a href="#" target="_top">Membership</a></li>
-                        <li><a href="#" target="_top">Mission/Vision</a></li>
-                        <li><a href="#" target="_top">Events</a></li>
-                        <li><a href="#" target="_top">Chapter Programs</a></li>
-                        <li><a href="#" target="_top">Contact Us</a></li>
+                        <li><Link to="/vision" target="_top">Mission/Vision</Link></li>
+                        <li><Link to="/events" target="_top">Events/Programs</Link></li>
+                        <li><a href="#" target="_top">Contributions</a></li>
+                        <li><Link to="/contacts" target="_top">Contact Us</Link></li>
                         <li className="mLogin">
                            <a href="#" data-toggle="modal" data-target="#myModal">Member Login</a>
                         </li>

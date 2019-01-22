@@ -2,7 +2,8 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './modules/App/App';
-import { About } from './modules/About/About'
+//import { About } from './modules/About/About';
+//import { Vision } from './modules/VisionMission/Vision';
 
 // require.ensure polyfill for node
 if (typeof require.ensure !== 'function') {
@@ -39,8 +40,29 @@ export default (
         });
       }}
     />
-  <Route path="/vision"
-  component={About}
-/>
-</Route>
-);
+    <Route
+      path="/vision"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/VisionMission/Vision').default);
+        });
+      }}
+    />
+    <Route
+      path="/events"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Events/Events').default);
+        });
+      }}
+    />
+    <Route
+      path="/contacts"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Contacts/Contacts').default);
+        });
+      }}
+    />
+  </Route>
+  );

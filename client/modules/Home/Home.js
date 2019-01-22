@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { MsgBox } from './components/MsgBox/MsgBox'
+import { MsgBox } from './components/MsgBox/MsgBox';
+
 class Home extends Component {
 
   render() {

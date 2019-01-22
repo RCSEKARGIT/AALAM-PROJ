@@ -2,7 +2,7 @@ import React from 'react';
 
 export function VisonMission() {
   return (
-        <div id="main-container">
+      <div id="main-container">
          <div className="index-content ">
             <div className="container">
                <div className="row">

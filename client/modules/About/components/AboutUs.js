@@ -12,8 +12,8 @@ export function AboutUs() {
                      <h1>AALAM VILUTHUGAL ASSOCIATION (AVA) </h1>
                         <p>AVA is a non profit association to Tand the primary mission is to Reconnect the alumni of Arasan Ganesan Polytechinc college (AGPC) with their fellow alumni, institute, and students on the campus.f. It is a Government-aided Polytechnic founded in 1981 byArasan A.M.S.Ganesan, a famous philanthropist of Sivakasi. t is situated 9 km. from Sivakasi town on Sivakasi -Virudhunagar main roa.</p>
                         <p>The association is started by alumni of various batches and groups spread across the world and the registred office in Vadapalani ,Chennai. The aim of the association to give basic education support, conducting chapter program,  Meeting, Conferences, Workshops, Family Meeting and educational programs..</p>
-                     <h1>Reconnect- Engage- Develop</h1>
-                     <p> Best Wishes 
+                     
+                        <p><b>>Office Address </b>
                         No. 73, Gurulakshmi Castle, 
                         Vallalar Street, 
                         Choolaimedu,
