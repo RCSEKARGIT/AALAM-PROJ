@@ -1,7 +1,7 @@
-.contact{
+.MsgBox{
   width: 100%;
   max-width: 1920px;
   text-align: center;
-  padding: 16px 0;
-  background-size: cover;
+  padding: 100px 0;
+  background-size: cover; 
 }

@@ -64,5 +64,21 @@ export default (
         });
       }}
     />
+    <Route
+      path="/donate"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Contributions/Contributions').default);
+        });
+      }}
+    />
+    <Route
+      path="/member"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Membership/Membership').default);
+        });
+      }}
+    />
   </Route>
   );

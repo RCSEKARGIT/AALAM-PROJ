@@ -8,61 +8,42 @@ const logo = require('./aalam-logo3.jpg');
 import styles from './Header.css';
 
 export function Header() {
-  return (
+  return (    
     <div id="header-container">
         <div id="header-wrap" className="container">
             <div className="row">
                <Link to='/'>
-               <div id="logo-wrap" className="col-md-2 col-sm-4 col-xs-6">
+               <div id="logo-wrap" className="col-md-1 col-sm-4 col-xs-6">
                   <img src={logo} alt="" className="img-responsive" />
                </div>
                </Link>
-               <div className="col-md-9 col-sm-6 hidden-xs">
-                  <div id="search-area" className="col-md-5 col-sm-12 hidden-xs">
-                     <form id="searchbox" action="https://google.co.in">
-                        <input id="q" name="keyword" type="search" className="search-input " placeholder="Search..." />
-                        <input type="hidden" name="org_id" value="AGPC" />
-                        <input value="" name="sa" className="search-button" type="submit" />
-                     </form>
-                  </div>
-               </div>
-               <div id="main-menu" className="col-md-9">
+               <div id="main-menu" className="col-md-11">
                   <div id="nav_menu" className="NP collapse navbar-collapse navbar-ex1-collapse">
-                     <ul className="nav navbar-nav men-level-">
+                     <ul className="nav navbar-nav navbar-inverse men-level-">
+                        <li><Link to="/" target="_top">Home</Link></li>
                         <li><Link to="/about" target="_top">About Us</Link></li>
-                        <li><a href="#" target="_top">Membership</a></li>
+                        <li className="dropdown">
+                        <a className="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                         Members Program <span class="caret"></span></a>
+                        <ul className="dropdown-menu">
+                        <li><Link to="/member" target="_top">Member Registration</Link></li>
+                        <li><Link to="/member" target="_top">Member-Referral</Link></li>
+                        </ul>
+                        </li>
+                        <li><Link to="/member" target="_top">News/Publications</Link></li>
                         <li><Link to="/vision" target="_top">Mission/Vision</Link></li>
                         <li><Link to="/events" target="_top">Events/Programs</Link></li>
-                        <li><a href="#" target="_top">Contributions</a></li>
+                        <li><Link to="/donate" target="_top">Contributions</Link></li>
                         <li><Link to="/contacts" target="_top">Contact Us</Link></li>
                         <li className="mLogin">
-                           <a href="#" data-toggle="modal" data-target="#myModal">Member Login</a>
+                          <a href="#" data-toggle="modal" data-target="#myModal">Member Login</a>
                         </li>
                      </ul>
-                  </div></div>
-               <div id="mobile-menu-col">
-                  <div id="mobile-toggle" className="mobileMenuTrigger hidden-lg">
-                     <svg
-                       version="1.1"
-                       id="burger"
-                       x="0px"
-                       y="0px"
-                       viewBox="0 0 35 35"
-                       enableBackground="new 0 0 35 35"
-                       xmlSpace="preserve"
-                     >
-                        <g id="burger-path">
-                           <rect x="0" y="0" fill="#0776a0" width="35" height="35" />
-                           <line fill="none" stroke="#FFFFFF" strokeWidth="3.8889" strokeLinecap="round" x1="6.4" y1="9" x2="28.6" y2="9" />
-                           <line fill="none" stroke="#FFFFFF" strokeWidth="3.8889" strokeLinecap="round" x1="6.4" y1="17.5" x2="28.6" y2="17.5" />
-                           <line fill="none" stroke="#FFFFFF" strokeWidth="3.8889" strokeLinecapp="round" x1="6.4" y1="26" x2="28.6" y2="26" />
-                        </g>
-                    </svg>
                   </div>
                </div>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
   );
 }
 
