@@ -2,6 +2,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './modules/App/App';
+import { Provider } from "react-redux";
 //import { About } from './modules/About/About';
 //import { Vision } from './modules/VisionMission/Vision';
 
@@ -76,7 +77,7 @@ export default (
       path="/member"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Membership/Membership').default);
+          cb(null, require('./modules/MemberReg/containers/FormContainer').default);
         });
       }}
     />

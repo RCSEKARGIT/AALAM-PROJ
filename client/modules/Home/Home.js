@@ -7,7 +7,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{ background: `url(${bg}) no-repeat`, backgroundSize: '100%' }} className={styles.MemberRef}>
+      <div style={{ background: `url(${bg}) no-repeat`, backgroundSize: '100%' }} className={styles.MsgBox}>
         <MsgBox />
       </div>
     );

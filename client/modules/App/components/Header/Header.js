@@ -11,13 +11,13 @@ export function Header() {
   return (    
     <div id="header-container">
         <div id="header-wrap" className="container">
-            <div className="row">
+            <div className="row col-lg-12 col-md-11 col-sm-4 col-xs-6">
                <Link to='/'>
                <div id="logo-wrap" className="col-md-1 col-sm-4 col-xs-6">
                   <img src={logo} alt="" className="img-responsive" />
                </div>
                </Link>
-               <div id="main-menu" className="col-md-11">
+               <div id="main-menu" className="col-md-11 col-sm-4 col-xs-6">
                   <div id="nav_menu" className="NP collapse navbar-collapse navbar-ex1-collapse">
                      <ul className="nav navbar-nav navbar-inverse men-level-">
                         <li><Link to="/" target="_top">Home</Link></li>

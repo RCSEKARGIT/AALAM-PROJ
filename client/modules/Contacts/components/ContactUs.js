@@ -5,7 +5,7 @@ import styles from '../../App/App.css';
 export function ContactUs() {
   return (
         <div id="main-container" >
-         <div className="index-content ">
+         <div className="index-content">
             <div className="container">
                <div className="row">
                   <div id="home-content" className="column col-md-12 col-md-push-1 col-md-pull-1 col-xs-12 col-sm-12">

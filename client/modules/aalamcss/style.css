@@ -1,0 +1,737 @@
+/*
+// VALUE:COLOR_1:#0776a0
+// VALUE:COLOR_2:#024c68
+// VALUE:COLOR_3:#3aa6d0
+// VALUE:COLOR_4:#024c68
+*/
+
+/*--------------------------------------------------------
+    FONT ASSIGNMENTS
+--------------------------------------------------------*/
+body {
+    font-size: 16px;
+	font-family: 'Roboto', arial, sans;
+}
+p {
+    color: #202123;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*--------------------------------------------------------
+    ALIGNMENT
+--------------------------------------------------------*/
+.txt-c { text-align: center; }
+.txt-l { text-align: left; }
+.txt-r { text-align: right; }
+
+/*--------------------------------------------------------
+    H1 - H6
+--------------------------------------------------------*/
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	color:#024c68;  /* REPLACE:COLOR_2 */
+	font-size: 28px;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+	font-family: 'Roboto', sans-serif;
+}
+h2 {
+	color: #024c68;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+	font-family: 'Roboto', sans-serif;	
+}
+h3 {
+    color:#024c68;  /* REPLACE:COLOR_2 */
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+    font-family: 'Roboto', sans-serif;  
+}
+h4 {
+    color: #226078;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;  
+}
+
+/*--------------------------------------------------------
+    LINKS
+--------------------------------------------------------*/
+a 				{ color: #990000; cursor: pointer; }
+a:hover			{ color: #EF373B; }
+a.black			{ color: #000000; }
+a.white 		{ color: #ffffff; }
+a.white:hover 	{ color: #cecece; }
+
+#page a {
+    color:#024c68;  /* REPLACE:COLOR_2 */
+}
+
+/*--------------------------------------------------------
+    IMAGES
+--------------------------------------------------------*/
+img { border: 0px; max-width: 100%;}
+
+/*--------------------------------------------------------
+    MODAL LOGIN
+--------------------------------------------------------*/
+.modal-content {
+    width: 280px;
+    border-radius: 0;
+}
+.modal-dialog {
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-body {
+    padding: 10px 20px 20px;
+}
+.modal-title {
+    text-align: center;
+}
+.modal #login input[type="text"],
+.modal #login input[type="password"] {
+    padding: 5px 0;
+    text-indent: 5px;
+    margin: 5px 0 5px;
+    border: 1px solid #737373;
+}
+
+/*--------------------------------------------------------
+    HEADER
+--------------------------------------------------------*/
+#header-container {
+    background-color:#0776a0;  /* REPLACE:COLOR_1 */
+}
+#header-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#circle path#shape {
+    fill: #ffffff;
+}
+#text path {
+    fill: #ffffff;
+}
+#search-area {
+    float: right;
+}
+input#q {
+    background: transparent;
+    float: left;
+    width: 85%;
+    margin: 8px 5px;
+    padding: 2px 0;
+    text-indent: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+    #search-area ::-webkit-input-placeholder {
+       color: #fff;
+    }
+
+    #search-area :-moz-placeholder { /* Firefox 18- */
+       color: #fff;  
+    }
+
+    #search-area ::-moz-placeholder {  /* Firefox 19+ */
+       color: #fff;  
+    }
+
+    #search-area :-ms-input-placeholder {  
+       color: #fff;  
+    }
+input.search-button {
+    background-image: url('../images/search-icon.png');
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    margin: 7px 0px;
+}
+#main-menu {
+    margin: 8px 0 0;
+}
+#nav_menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+    text-decoration: underline !important;
+    background-color: transparent !important;
+}
+.navbar-nav .open > a, .navbar-nav .open > a:focus, .navbar-nav .open > a:hover {
+    background-color: transparent;
+}
+li.mLogin {
+    border:#024c68;  /* REPLACE:COLOR_2 */
+    background:#3aa6d0;  /* REPLACE:COLOR_3 */
+    border-radius: 5px;
+}
+li.mLogin a:hover {
+    color: #fff !important;
+}
+.navbar-nav > li > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 4px; 
+}
+.dropdown-menu > li > a {
+    color: #333333 !important;
+}
+
+#mobile-menu input#q {
+    background: transparent;
+    float: left;
+    width: 85%;
+    margin: 8px 5px;
+    padding: 2px 0;
+    text-indent: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+#mobile-menu input.search-button {
+    background-image: url('../images/search-icon.png');
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    margin: 7px 0px;
+}
+/*--------------------------------------------------------
+    MOBILE MENU
+--------------------------------------------------------*/
+#mobileMenuWrapper {
+    position: fixed;
+    top: -1px;
+    bottom: 0px;
+    z-index: 100;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: -120%;
+    width: 225px;
+    max-width: 100%;
+    background-color: #AD6336;
+    transition: all 300ms cubic-bezier(1, 0.01, 0, 1) 0s;
+}
+#mobileMenuWrapper.open {
+    left: 0px;
+    bottom: 0px;
+}
+#mobileMenuWrapper #mobile-menu {
+    overflow: auto;
+    padding: 0px 20px 10px;
+}
+#mobileMenuWrapper ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+#mobile-menu > li#triggerClose {
+    color: #fff;
+    float: right;
+    display: inline;
+    font-size: 22px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+#mobileMenuWrapper #mobile-menu a {
+    width: 100%;
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+#mobileMenuWrapper ul.mDropdown {
+    margin: 0 15px;
+    display: none;
+}
+#mobileMenuWrapper .mDropdown.open {
+    display: block;
+}
+#mobile-menu a {
+
+}
+#mobile-toggle {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+}
+#mobile-menu-col {
+    top: 10px;
+    right: 20px;
+    float: right;
+    position: relative;
+}
+#mobile-logo {
+    width: 40%;
+    float: left;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+#mobile-logo a {
+    margin: 0 !important;
+}
+#mobile-logo svg#logo {
+    width: 250px;
+    max-width: 250px;
+}
+svg#burger {
+    width: 35px;
+    height: 35px;
+}
+/*.caret {
+    border-top: 4px solid #fff;
+}*/
+
+
+
+/*--------------------------------------------------------
+    INDEX / MAIN BODY
+--------------------------------------------------------*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#slide-container .carousel-inner >.item > img {
+    width: 100%;
+}
+.carousel-caption {
+    background-color: rgba(2,76,104,0.6);  /* REPLACE_RGB:COLOR_4 */
+    border-left:#0776a0;  /* REPLACE:COLOR_1 */
+}
+.carousel-caption p.caption-text {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.carousel-caption p.alt-text {
+    color: #fff;
+    text-align: left;
+    margin-left: 30px;
+}
+.carousel-caption a {
+    display: none;
+}
+ol.carousel-indicators {
+    display: none;
+}
+#link-container {
+    background-color:#024c68; /* REPLACE:COLOR_2 */
+}
+.index-content .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row_background {
+    color: #ffffff;
+    background-color: #024c68;
+}
+.row_background h1, .row_background h2, .row_background h3,
+.row_background h4, .row_background p, .row_background a {
+    color: #ffffff;
+}
+.column_background {
+    color: #ffffff;
+    background-color: #024c68;
+}
+.column_background h1, .column_background h2, .column_background h3,
+.column_background h4, .column_background p, .column_background a {
+    color: #ffffff;
+}
+
+#home-content {
+    padding: 20px 15px;
+}
+
+#quick-links {
+    padding: 30px 0 40px;
+}
+#quick-links h1 {
+    font-size: 22px;
+    text-align: center;
+}
+#quick-links p, #quick-links a {
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+#quick-links a {
+    text-decoration: underline;
+}
+#posts {
+    padding: 40px 15px;
+}
+.news-item {
+    padding: 10px 0;
+}
+a.news-title-link {
+    color: #226078;
+}
+span.news-blurb {
+    color: #000;
+}
+a.ev-title-link {
+    color: #226078;
+}
+.event-item {
+    padding: 10px 0;   
+}
+span.event-blurb {
+    color: #000;   
+}
+.event-date {
+    float: left;
+    margin: 0 10px;
+}
+.event-month {
+    background-color:#024c68;  /* REPLACE:COLOR_2 */
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 2px;
+}
+.event-day {
+    background-color:#3aa6d0;  /* REPLACE:COLOR_3 */
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 0 3px 3px;
+}
+#feed-container {
+    padding: 20px 0 60px;
+}
+
+/*--------------------------------------------------------
+    CSS STYLE FOR INNER PAGES
+--------------------------------------------------------*/
+.test_wrapper .container .row {
+    padding-top: 20px;
+}
+#page {
+    min-height: calc(100vh - 298px);
+    padding-top: 30px;
+}
+
+
+/*--------------------------------------------------------
+    FOOTER
+--------------------------------------------------------*/
+#footer-container {
+    background-color:#0776a0;  /* REPLACE:COLOR_1 */
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+#footer-wrap p, #footer-wrap a {
+    color: #fff;
+    font-weight: 100;
+    margin-top: 10px;
+}
+#footer-wrap a {
+    text-decoration: underline;
+}
+#credits {
+    text-align: left;
+}
+#footer-social {
+    text-align: right;
+}
+#footer-social img {
+    display: inline-block;
+}
+
+/*--------------------------------------------------------
+    MEDIA QUERY
+--------------------------------------------------------*/
+@media (min-width: 1000px) {
+    .container {}
+    
+}
+
+@media (min-width: 990px) and (max-width: 1199px) { 
+    .container {}
+    #main-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .container {}
+    #events-feed {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {}
+    #events-feed {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .container {}
+    .carousel-caption {
+        background: rgba(2,76,104,1);
+        display: block;
+        position: static;
+        width: 100%;
+    }
+    #events-feed {
+        padding-top: 20px;
+    }
+}
+
+/*------------------------------------------------------------------------------------
+                            Dropdown Menus - full/collapsed
+--------------------------------------------------------------------------------------*/
+
+.dropdown-menu li{
+    width: 100%;
+}
+/*----------------------------
+    Mobile Menu
+    
+    --- INSTRUCTIONS ---
+    For the most part, these mobile menu styles will be exactly like your regular navigation styles.
+    There are a few things to watch out for however. I've marked specific items with two hash tags and caps,
+    like ##ITEM. 
+    
+    ##TOP - There are three places where this exists, and each one should be the same as the other three.
+            This item tells the mobile menu to start lower than the toggle button.
+            
+    ##DIRECTION - This item tells your mobile menu which direction to slide in from, and has a few
+        different parts. Changing "left" to "top" in each ##DIRECTION would have the menu slide in from the top. Bottom is a bad choice here.
+        ##DIRECTION-01 - slides in from the side you specify. This one is set negative as it is the starting position of the menu.
+        ##DIRECTION-02 - sets the duration of the slide, and again which direction it slides from.
+        ##DIRECTION-03 - sets the "open" position. This will be the zeroed out version of ##DIRECTION-01
+    
+    --------------------
+------------------------------*/
+
+/*---------------------------------------------
+        Mobile Menu
+---------------------------------------------*/
+
+/*-------------------------------------toggle*/
+button#mobile-toggle{
+    width: 37px;
+    height: 37px;
+    display: none;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    border: 2px solid #002857;
+    border-radius: 4px;
+    padding: 8px 5px;
+    background-color: white;
+    box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@media (max-width: 990px) {
+    button#mobile-toggle{
+        display: inline-block;
+    }
+}
+button#mobile-toggle svg *{
+    fill: #002857;
+}
+/*--------------------------------end--toggle*/
+#mobile-menu>li#triggerClose{
+    display: inline;
+    float: right;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 22px;
+    cursor: pointer;
+}
+#mobile-menu>li#mobile-logo{
+    position: relative;
+    left: -15px;
+    top: -10px;
+}
+#mobile-menu>li#mobile-logo>a{
+    display: inline;
+    max-width: 80%;
+}
+#mobile-menu>li #q{
+    width: 75%;
+}
+#mobile-menu>li>a{
+    width: 174px;
+    min-height: 32px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    background-color: transparent;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5485A3;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+    text-decoration: none;
+}
+#mobileMenuWrapper {
+    /*
+    The menu wrapper is the div that surrounds the mobile menu.
+    You'll want to make sure this has a background of some sort so the text shows up/doesn't appear over other text
+    Setting bottom:0px; is needed to make a long menu scroll-able.
+    
+    
+    
+    /* REQUIRED */
+    position: fixed;
+    top:0px;
+    bottom: 0px;        /* If having the menu slide in from the top or bottom, comment out this line */
+    z-index: 200;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* CHANGEABLE-ISH */
+    left: -120%;            /* Change this to left, right, top, or bottom.  You'll also have to make a change in the open state */
+    width: 300px;       /* The mobile menu works best with a pre-defined width. Percentages also work great here. */
+    
+    /* CHANGEABLE */
+    background-color: #0776A0;
+    
+    /* Transition - bump */
+    transition: left .3s; /* ##DIRECTION-02 */
+    -webkit-transition: all 300ms cubic-bezier(1.000, 0.010, 0.0, 1.000); /* older webkit */
+    -webkit-transition: all 300ms cubic-bezier(1.000, 0.010, 0.0, 1.000); 
+    -moz-transition: all 300ms cubic-bezier(1.000, 0.010, 0.0, 1.000); 
+    -o-transition: all 300ms cubic-bezier(1.000, 0.010, 0.0, 1.000); 
+    transition: all 300ms cubic-bezier(1.000, 0.010, 0.0, 1.000); 
+}
+#mobileMenuWrapper.open{
+    left: 0px;      /* This is required.  If you changed the direction attribute above, change it here too. */
+    bottom: 0px;    /* This line is here for bottom/top slide-ins.  See note on bottom above.*/
+}
+
+/* REQUIRED - Dropdown menu item transition states*/
+#mobileMenuWrapper .mDropdown {
+    display:none;
+}
+#mobileMenuWrapper .mDropdown.open{
+    display: block;
+}
+
+/* REQUIRED - Sets the ULs to not have dots, or be spaced in the typical UL fashion. */
+#mobileMenuWrapper ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* OPTIONAL-ISH - These are the settings for the base menu UL */
+#mobileMenuWrapper #mobile-menu{
+    overflow: auto;
+    padding: 15px 15px 15px 10px;
+}
+/* OPTIONAL-ISH - This sets each link on its own line fo' sho' */
+/*#mobileMenuWrapper a, #mobileMenuWrapper div{
+    display: block;
+}*/
+
+/* OPTIONAL - The actual A's. Style them as you wish*/
+/* Top Level / all*/
+#mobileMenuWrapper #mobile-menu a {
+    display: inline-block;
+    width: 100%;
+}
+
+/* dropdown only */
+#mobileMenuWrapper .mDropdown a {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#mobile-menu > li > ul {
+    background-color: rgba(0,0,0,.04);
+}
+/*------------------------------------------------------------------------------------
+                                @Media and Sizes
+--------------------------------------------------------------------------------------*/
+ /*------ Nav collapse @ Tablet size ------*/
+ @media (max-width: 991px) {
+    .navbar-header {
+    float: none;
+    }
+    .navbar-toggle {
+    display: block;
+    }
+    .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+    display: none!important;
+    }
+    .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+    float: none;
+    }
+    .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+    display: block!important;
+    }
+    .collapsing {
+    overflow: hidden!important;
+    }
+    /*.dropdown-menu {
+        border: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }*/
+
+}
+@media (min-width: 768px) and (max-width: 990px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 480px) { 
+
+}
+
+
+
+
+

@@ -4,6 +4,8 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
 
+import 'style.css';
+
 // Initialize the Express App
 const app = new Express();
 
@@ -128,7 +130,7 @@ const renderFullPage = (html, initialState) => {
         <link href='https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
         <!-- Our style sheets -->
-        <link rel="stylesheet" type="text/css" href="http://host7.viethwebhosting.com/~bbd1/css/style.css?combobreaker=1520023496"  />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <style type="text/css">
            body{
@@ -140,6 +142,7 @@ const renderFullPage = (html, initialState) => {
            .ie8mademedoit{
            margin-top: 20px;
            }
+           
         </style>
         <link rel="shortcut icon" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon16px.png">
         <link rel="icon" sizes="16x16" href="http://host7.viethwebhosting.com/~bbd1/images/favicons/Association_Website_Templates_Favicon16px.png">
